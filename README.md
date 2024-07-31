@@ -15,4 +15,9 @@ Mod | Description | Download
 To open it from Steam just right-click the game in the library and select `Manage` -> `Browse local files`.
 
 ## Build
-TODO
+
+1. Download this repository
+2. Edit game path in `game.props` file (used to reference game files and to copy plugin after build)
+3. Open solution in visual studio
+4. Build required mod
+5. Run game to test it :)
