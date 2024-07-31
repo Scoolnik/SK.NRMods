@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project>
+	<Import Project="game.props" />
+
+	<PropertyGroup>
+		<TargetFramework>net472</TargetFramework>
+		<OutputType>Library</OutputType>
+		<GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+		<LangVersion>latest</LangVersion>
+		<DebugType>none</DebugType>
+	
+		<BepinExPath>$(GamePath)BepInEx\</BepinExPath>
+		<BepinExCorePath>$(BepinExPath)core\</BepinExCorePath>
+		<InteropPath>$(BepinExPath)interop\</InteropPath>
+		<ModsPath>$(BepinExPath)plugins\</ModsPath>
+
+		<!--This tells the compiler where to look for assemblies. Don't change it.-->
+		<AssemblySearchPaths>$(AssemblySearchPaths);$(BepinExCorePath);$(InteropPath);</AssemblySearchPaths>
+	</PropertyGroup>
+	
+	<Import Project="common-references.props" />
+	
+	<!--This tells the compiler to not include referenced assemblies in the output folder.-->
+	<ItemDefinitionGroup>
+		<Reference>
+			<Private>False</Private>
+		</Reference>
+	</ItemDefinitionGroup>
+	
+	<Target Name="PostBuild" AfterTargets="PostBuildEvent">
+		<Copy SourceFiles="$(OutputPath)$(AssemblyName).dll" DestinationFolder="$(ModsPath)" ContinueOnError="false" />
+	</Target>
+</Project>

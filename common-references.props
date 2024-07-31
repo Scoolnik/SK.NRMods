@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project>
+	<ItemGroup>
+		<Reference Include="0Harmony"/>
+		<Reference Include="Assembly-CSharp"/>
+		<Reference Include="Assembly-CSharp-firstpass"/>
+		<Reference Include="BepInEx.Core"/>
+		<Reference Include="BepInEx.Unity.Common"/>
+		<Reference Include="BepInEx.Unity.IL2CPP"/>
+		<Reference Include="Il2CppInterop.Common"/>
+		<Reference Include="Il2CppInterop.Generator"/>
+		<Reference Include="Il2CppInterop.HarmonySupport"/>
+		<Reference Include="Il2CppInterop.Runtime"/>
+		<Reference Include="Il2CppMono.Posix"/>
+		<Reference Include="Il2CppMono.Security"/>
+		<Reference Include="Il2Cppmscorlib"/>
+		<Reference Include="Il2CppSystem"/>
+		<Reference Include="Il2CppSystem.Configuration"/>
+		<Reference Include="Il2CppSystem.Core"/>
+		<Reference Include="Il2CppSystem.Drawing"/>
+		<Reference Include="Il2CppSystem.Numerics"/>
+		<Reference Include="Il2CppSystem.Runtime.Serialization"/>
+		<Reference Include="Il2CppSystem.Windows.Forms"/>
+		<Reference Include="Il2CppSystem.Xml"/>
+		<Reference Include="Il2CppSystem.Xml.Linq"/>
+		<Reference Include="NavMeshComponents"/>
+		<Reference Include="NavMeshComponentsExamples"/>
+		<Reference Include="Unity.Addressables"/>
+		<Reference Include="Unity.Postprocessing.Runtime"/>
+		<Reference Include="Unity.ResourceManager"/>
+		<Reference Include="Unity.TextMeshPro"/>
+		<Reference Include="UnityEngine"/>
+		<Reference Include="UnityEngine.AssetBundleModule"/>
+		<Reference Include="UnityEngine.AudioModule"/>
+		<Reference Include="UnityEngine.BaselibModule"/>
+		<Reference Include="UnityEngine.CoreModule"/>
+		<Reference Include="UnityEngine.ImageConversionModule"/>
+		<Reference Include="UnityEngine.IMGUIModule"/>
+		<Reference Include="UnityEngine.InputModule"/>
+		<Reference Include="UnityEngine.JSONSerializeModule"/>
+		<Reference Include="UnityEngine.LocalizationModule"/>
+		<Reference Include="UnityEngine.Networking"/>
+		<Reference Include="UnityEngine.SharedInternalsModule"/>
+		<Reference Include="UnityEngine.TextCoreModule"/>
+		<Reference Include="UnityEngine.TextRenderingModule"/>
+		<Reference Include="UnityEngine.UI"/>
+		<Reference Include="UnityEngine.UIElementsModule"/>
+		<Reference Include="UnityEngine.UIModule"/>
+		<Reference Include="UnityEngine.UnityWebRequestAssetBundleModule"/>
+		<Reference Include="UnityEngine.UnityWebRequestAudioModule"/>
+		<Reference Include="UnityEngine.UnityWebRequestModule"/>
+		<Reference Include="UnityEngine.UnityWebRequestTextureModule"/>
+		<Reference Include="UnityEngine.UnityWebRequestWWWModule"/>
+	</ItemGroup>
+</Project>
