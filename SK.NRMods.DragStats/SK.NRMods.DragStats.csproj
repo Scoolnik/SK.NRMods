@@ -1,0 +1,12 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<Import Project="../common.props" />
+
+
+	<!--<Target Name="PostBuild" AfterTargets="PostBuildEvent">
+		<ItemGroup>
+			<GameFolder Include="$(GamePath)BepInEx\plugins\" />
+		</ItemGroup>
+		<Copy SourceFiles="$(OutputPath)$(AssemblyName).dll" DestinationFolder="@(GameFolder)" ContinueOnError="true" />
+	</Target>-->
+</Project>
