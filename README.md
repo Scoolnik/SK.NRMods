@@ -17,7 +17,7 @@ To open it from Steam just right-click the game in the library and select `Manag
 ## Build
 
 1. Download this repository
-2. Edit game path in `game.props` file (used to reference game files and to copy plugin after build)
+2. Create `game.props` file with your game path, based on [`game.props.example`](https://github.com/Scoolnik/SK.NRMods/blob/master/game.props.example) (used to reference game files and to copy plugin after build)
 3. Open solution in visual studio
 4. Build required mod
 5. Run game to test it :)
