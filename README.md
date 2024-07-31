@@ -4,7 +4,7 @@
 
 Mod | Description | Download
 -|-|:-:
-| [**Drag stats**](https://github.com/Scoolnik/SK.NRMods/tree/master/SK.NRMods.DragStats) | This mod allows you to measure drag stats (like time from 0 to 100km/h) | [click](https://github.com/Scoolnik/SK.NRMods/releases/tag/DS-v1.0.2)|
+| [**Drag stats**](https://github.com/Scoolnik/SK.NRMods/tree/master/SK.NRMods.DragStats) | This mod allows you to measure drag stats (like time from 0 to 100km/h) | [click](https://github.com/Scoolnik/SK.NRMods/releases/download/DS-v1.0.2/SK.NRMods.DragStats.dll)|
 
 ## Installation:
 1. Install BepInEx 6 Unity (IL2CPP), at least v647, but its better to have the latest version. Official site: https://builds.bepinex.dev/projects/bepinex_be﻿
