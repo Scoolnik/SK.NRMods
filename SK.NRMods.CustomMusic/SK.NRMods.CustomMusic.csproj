@@ -1,0 +1,13 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <Import Project="../common.props" />
+
+    <PropertyGroup>
+        <TargetFramework>net6</TargetFramework>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="FFMpegCore" Version="5.1.0" />
+	  <Reference Include="Rewired_Core" />
+    </ItemGroup>
+</Project>
