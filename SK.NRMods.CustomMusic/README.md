@@ -5,7 +5,7 @@ A mod that adds custom music support.
 ## How to use
 1. Download mod and unzip it to plugins folder (BepInEx required, check [README](https://github.com/Scoolnik/SK.NRMods/blob/master/README.md) for more info
 2. Run game, so all the required folders will be created
-3. Put your audio files to `Music` folder inside game folder
+3. Put your audio files to the corresponding subfolder inside `Music` folder inside game folder
 4. Run the game and listen to your favourite music :)
  
 Custom tracks will be added to default playlists. 
