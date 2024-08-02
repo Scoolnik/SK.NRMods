@@ -1,4 +1,4 @@
-# Custom music mod (aka LibreMusic)
+# Custom music mod (aka NR_LibreMusic)
 
 A mod that adds custom music support.
 
