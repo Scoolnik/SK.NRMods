@@ -4,7 +4,8 @@
 
 Mod | Description | Download
 -|-|:-:
-| [**Drag stats**](https://github.com/Scoolnik/SK.NRMods/tree/master/SK.NRMods.DragStats) | This mod allows you to measure drag stats (like time from 0 to 100km/h) | [click](https://github.com/Scoolnik/SK.NRMods/releases/download/DS-v1.0.2/SK.NRMods.DragStats.dll)|
+| [**Drag stats**](https://github.com/Scoolnik/SK.NRMods/tree/master/SK.NRMods.DragStats/README.md) | This mod allows you to measure drag stats (like time from 0 to 100km/h) | [click](https://github.com/Scoolnik/SK.NRMods/releases/download/DS-v1.0.2/SK.NRMods.DragStats.dll)|
+| [**Custom music**](https://github.com/Scoolnik/SK.NRMods/blob/master/SK.NRMods.CustomMusic/README.md) | This mod allows you to use custom tracks in game) | [click](https://github.com/Scoolnik/SK.NRMods/releases/download/CM-v1.0.2/SK.NRMods.CustomMusic.zip)|
 
 ## Installation
 1. Install [BepInEx 6 Unity (IL2CPP)](https://builds.bepinex.dev/projects/bepinex_be/692/BepInEx-Unity.IL2CPP-win-x64-6.0.0-be.692%2B851521c.zip), at least v647, but its better to have the latest version. Official site: [builds.bepinex.dev﻿](https://builds.bepinex.dev/projects/bepinex_be)
