@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.IO;
+using System.Linq;
 using MusicCategory = GodConstant.Music_State;
 
 namespace SK.NRMods.CustomMusic.Service
@@ -80,13 +81,14 @@ namespace SK.NRMods.CustomMusic.Service
 
 		private string[] GetPaths(MusicCategory category)
 		{
-			var path = Path.Combine(Settings.MusicFolder, category.ToString());
-
-			if (!Directory.Exists(path))
+			var categoryName = category.ToString();
+			var folders = Directory.GetDirectories(Settings.MusicFolder).Where(x => Path.GetFileName(x).Split(" ").Contains(categoryName));
+			var list = new List<string>();
+			foreach (var folder in folders)
 			{
-				return Array.Empty<string>();
+				list.AddRange(Directory.GetFiles(folder));
 			}
-			return Directory.GetFiles(path);
+			return list.ToArray();
 		}
 	}
 }
