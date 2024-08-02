@@ -31,5 +31,6 @@ I accidentally tested it with 800mb .flac file and it was converted in about a m
 ## TODO
 - Yandex music/Spotify/Youtube/etc support, so u could just use link to listen music
 - race win/lose music support
+- download FFmpeg in runtime
 
 ![preview-min](https://github.com/user-attachments/assets/ca6d8314-a099-4054-90fc-88d061381012)
