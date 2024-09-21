@@ -16,7 +16,7 @@ Mod | Description | Download
 
 To open it from Steam just right-click the game in the library and select `Manage` -> `Browse local files`.
 
-## Build
+## Build (for devs)
 
 1. Download this repository
 2. Create `game.props` file with your game path, based on [`game.props.example`](https://github.com/Scoolnik/SK.NRMods/blob/master/game.props.example) (used to reference game files and to copy plugin after build)
