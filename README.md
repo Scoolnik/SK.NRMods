@@ -15,6 +15,8 @@ Mod | Description | Download
 ﻿The game folder is the folder containing the game's executable.
 
 To open it from Steam just right-click the game in the library and select `Manage` -> `Browse local files`.
+> [!TIP]
+> If you don't know which bepinex version you need﻿, just look for `BepInEx Unity (IL2CPP) for Windows (x64) games`
 
 ## Build (for devs)
 
