@@ -1,7 +1,7 @@
 ﻿using BepInEx;
 using BepInEx.Unity.IL2CPP;
 using HarmonyLib;
-using SK.NRMods.CustomMusic.HarmonyParchers;
+using SK.NRMods.CustomMusic.HarmonyPatchers;
 
 namespace SK.NRMods.CustomMusic
 {

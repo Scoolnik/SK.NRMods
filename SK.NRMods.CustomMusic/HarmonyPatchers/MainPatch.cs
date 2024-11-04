@@ -4,7 +4,7 @@ using SK.NRMods.CustomMusic.Service;
 using System.Linq;
 using UnityEngine;
 
-namespace SK.NRMods.CustomMusic.HarmonyParchers
+namespace SK.NRMods.CustomMusic.HarmonyPatchers
 {
 	internal static class MainPatch
 	{
