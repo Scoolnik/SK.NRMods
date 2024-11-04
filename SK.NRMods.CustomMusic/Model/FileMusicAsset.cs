@@ -10,6 +10,8 @@ namespace SK.NRMods.CustomMusic.Model
 		public override AudioClip AudioClip { get; protected set; }
 		public override RCC_Settings.SongTrack_ID ID { get; protected set; } = RCC_Settings.SongTrack_ID.null_song;
 
+		private UnityWebRequest _loadRequest;
+
 		public override bool IsCorrupted()
 		{
 			return AudioClip == null;
@@ -22,7 +24,9 @@ namespace SK.NRMods.CustomMusic.Model
 				yield break;
 			}
 
+			DisposeRequest();
 			var www = UnityWebRequestMultimedia.GetAudioClip("file:///" + file.Path, MusicUtils.GetAudioType(file.Path));
+			_loadRequest = www;
 			yield return www.SendWebRequest();
 			if (www.isNetworkError || www.isHttpError)
 			{
@@ -43,10 +47,20 @@ namespace SK.NRMods.CustomMusic.Model
 
 		protected override void Unload()
 		{
+			DisposeRequest();
 			if (AudioClip != null)
 			{
 				AudioClip.Destroy(AudioClip);
 				AudioClip = null;
+			}
+		}
+
+		private void DisposeRequest()
+		{
+			if (_loadRequest != null)
+			{
+				_loadRequest.Dispose();
+				_loadRequest = null;
 			}
 		}
 	}

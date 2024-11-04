@@ -24,10 +24,7 @@ namespace SK.NRMods.CustomMusic.Service
 			_libsPath = Path.GetDirectoryName(Assembly.GetAssembly(typeof(BackgroundMusicCacheService)).Location);
 			GlobalFFOptions.Configure(new FFOptions { BinaryFolder = _libsPath });
 
-			if (!Directory.Exists(_cacheFolder))
-			{
-				Directory.CreateDirectory(_cacheFolder);
-			}
+			Directory.CreateDirectory(_cacheFolder);
 		}
 
 		public IEnumerable<MusicFileInfo> GetFilesInfo(IEnumerable<string> paths)
@@ -45,6 +42,7 @@ namespace SK.NRMods.CustomMusic.Service
 			{
 				_cancellationTokenSource.Cancel();
 				_cancellationTokenSource.Dispose();
+				_cancellationTokenSource = null;
 			}
 		}
 
@@ -59,19 +57,20 @@ namespace SK.NRMods.CustomMusic.Service
 		{
 			if (!file.IsReadyToLoad())
 			{
-				FFMpegArguments
+				var success = FFMpegArguments
 					.FromFileInput(file.OriginalPath, false)
 					.OutputToFile(file.CachePath, true, options => options
 						.WithCustomArgument("-vn")
 						.WithAudioCodec(AudioCodec.LibVorbis)
 						.WithFastStart())
 					.CancellableThrough(cancel)
-					.ProcessSynchronously();
+					.ProcessSynchronously(false);
 
-				cancel.Register(() =>
+				if (!success)
 				{
 					File.Delete(file.CachePath);
-				});
+					return new ValueTask();
+				}
 			}
 			TrackCached?.Invoke(file);
 			return new();

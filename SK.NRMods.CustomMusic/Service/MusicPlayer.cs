@@ -141,7 +141,10 @@ namespace SK.NRMods.CustomMusic.Service
 		{
 			if (_toDispose.Count > 5 && (DateTime.Now - _lastAssetsDisposeTime).TotalMinutes > 1)
 			{
+				Debug.Log("Disposing assests");
+				var time = DateTime.Now;
 				DisposeLoadedAssets();
+				Debug.Log("Disposed. Took " + (DateTime.Now - time).TotalMilliseconds);
 			}
 		}
 

@@ -23,6 +23,11 @@ namespace SK.NRMods.CustomMusic.Service
 
 		public Playlist LoadPlaylist(MusicCategory category)
 		{
+			if (!_categories.Contains(category))
+			{
+				return new Playlist(category);
+			}
+			
 			if (_playlist?.Category == category)
 			{
 				return _playlist;
@@ -30,7 +35,6 @@ namespace SK.NRMods.CustomMusic.Service
 
 			_cacheService.Stop();
 			var playlist = new Playlist(category);
-			_playlist = playlist;
 			var paths = GetPaths(category);
 			var files = _cacheService.GetFilesInfo(paths);
 			var toCache = new List<MusicFileInfo>();
@@ -48,6 +52,7 @@ namespace SK.NRMods.CustomMusic.Service
 			}
 			//UnityEngine.Debug.LogError(ready.Count);
 			//UnityEngine.Debug.LogError(toCache.Count);
+			_playlist = playlist;
 			_playlist.AddTracks(ready);
 			_cacheService.StartCache(toCache);
 
@@ -79,7 +84,7 @@ namespace SK.NRMods.CustomMusic.Service
 			}
 		}
 
-		private string[] GetPaths(MusicCategory category)
+		private List<string> GetPaths(MusicCategory category)
 		{
 			var categoryName = category.ToString();
 			var folders = Directory.GetDirectories(Settings.MusicFolder).Where(x => Path.GetFileName(x).Split(" ").Contains(categoryName));
@@ -88,7 +93,7 @@ namespace SK.NRMods.CustomMusic.Service
 			{
 				list.AddRange(Directory.GetFiles(folder));
 			}
-			return list.ToArray();
+			return list;
 		}
 	}
 }
