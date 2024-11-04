@@ -4,6 +4,7 @@
 
     <PropertyGroup>
         <TargetFramework>net6</TargetFramework>
+        <ModSubPath>SK.NRMods.CustomMusic\</ModSubPath>
     </PropertyGroup>
 
     <ItemGroup>

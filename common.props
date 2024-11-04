@@ -13,7 +13,7 @@
 		<BepinExCorePath>$(BepinExPath)core\</BepinExCorePath>
 		<InteropPath>$(BepinExPath)interop\</InteropPath>
 		<ModsPath>$(BepinExPath)plugins\</ModsPath>
-
+		<ModSubPath></ModSubPath>
 		<!--This tells the compiler where to look for assemblies. Don't change it.-->
 		<AssemblySearchPaths>$(AssemblySearchPaths);$(BepinExCorePath);$(InteropPath);</AssemblySearchPaths>
 	</PropertyGroup>
@@ -28,6 +28,6 @@
 	</ItemDefinitionGroup>
 	
 	<Target Name="PostBuild" AfterTargets="PostBuildEvent">
-		<Copy SourceFiles="$(OutputPath)$(AssemblyName).dll" DestinationFolder="$(ModsPath)" ContinueOnError="false" />
+		<Copy SourceFiles="$(OutputPath)$(AssemblyName).dll" DestinationFolder="$(ModsPath)$(ModSubPath)" ContinueOnError="false" />
 	</Target>
 </Project>
