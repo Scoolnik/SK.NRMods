@@ -58,6 +58,12 @@ namespace SK.NRMods.CustomMusic.Service
 			RandomSong();
 		}
 
+		public void Shuffle()
+		{
+			_playlist.Shuffle();
+			NextSong();
+		}
+
 		public void RandomSong()
 		{
 			PlayTrack(_playlist.RandomTrack());

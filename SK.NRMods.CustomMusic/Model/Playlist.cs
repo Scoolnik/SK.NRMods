@@ -11,7 +11,7 @@ namespace SK.NRMods.CustomMusic.Model
 		public readonly MusicCategory Category;
 
 		private int _trackIndex = 0;
-		private readonly List<MusicAsset> _tracks = [];
+		private List<MusicAsset> _tracks = [];
 		private readonly int _defaultTracksCount;
 		private readonly object _sync = new();
 
@@ -100,6 +100,11 @@ namespace SK.NRMods.CustomMusic.Model
 			{
 				return _tracks.Remove(track);
 			}
+		}
+
+		public void Shuffle()
+		{
+			Utils.ArrayUtils.Shuffle(ref _tracks);
 		}
 	}
 }

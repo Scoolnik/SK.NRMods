@@ -27,14 +27,26 @@ namespace SK.NRMods.CustomMusic.HarmonyPatchers
 				return true;
 			}
 			var inputs = god.player;
+			var changed = false;
 			if (inputs.GetButtonDoublePressUp("menu_left"))
 			{
 				_player.PreviousSong();
-				god.Play_UISound_(god.phoneMenu_input, 1f, 1f);
+				changed = true;
 			}
 			else if (inputs.GetButtonDoublePressUp("menu_right"))
 			{
 				_player.NextSong();
+				changed = true;
+
+			}
+			else if (Input.GetKeyUp(KeyCode.F2))
+			{
+				_player.Shuffle();
+				changed = true;
+			}
+
+			if (changed)
+			{
 				god.Play_UISound_(god.phoneMenu_input, 1f, 1f);
 			}
 			return false;
