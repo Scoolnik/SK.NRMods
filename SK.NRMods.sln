@@ -7,6 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SK.NRMods.DragStats", "SK.N
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SK.NRMods.CustomMusic", "SK.NRMods.CustomMusic\SK.NRMods.CustomMusic.csproj", "{F12C907F-EBA7-46DB-BE0E-106722631A9E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SK.NRMods.PositionFix", "SK.NRMods.PositionFix\SK.NRMods.PositionFix.csproj", "{069CF18E-AA5D-4A4F-9FDF-C737CEC76699}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{F12C907F-EBA7-46DB-BE0E-106722631A9E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F12C907F-EBA7-46DB-BE0E-106722631A9E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F12C907F-EBA7-46DB-BE0E-106722631A9E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{069CF18E-AA5D-4A4F-9FDF-C737CEC76699}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{069CF18E-AA5D-4A4F-9FDF-C737CEC76699}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{069CF18E-AA5D-4A4F-9FDF-C737CEC76699}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{069CF18E-AA5D-4A4F-9FDF-C737CEC76699}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
