@@ -12,7 +12,7 @@ Since game changed it's major version in new Private Alpha - all plugins with ve
 Mod | Description | Download
 -|-|:-:
 | [**Drag stats**](https://github.com/Scoolnik/SK.NRMods/tree/master/SK.NRMods.DragStats/README.md) | This mod allows you to measure drag stats (like time from 0 to 100km/h) | [v1.0.2](https://github.com/Scoolnik/SK.NRMods/releases/download/DS-v1.0.2/SK.NRMods.DragStats.dll)<br>[v2.0.0](https://github.com/Scoolnik/SK.NRMods/releases/download/DS-v2.0.0/SK.NRMods.DragStats.dll)|
-| [**Custom music**](https://github.com/Scoolnik/SK.NRMods/blob/master/SK.NRMods.CustomMusic/README.md) | This mod allows you to use custom tracks in game | [v1.0.2](https://github.com/Scoolnik/SK.NRMods/releases/download/CM-v1.0.2/SK.NRMods.CustomMusic.zip)|
+| [**Custom music**](https://github.com/Scoolnik/SK.NRMods/blob/master/SK.NRMods.CustomMusic/README.md) | This mod allows you to use custom tracks in game | [v1.0.2](https://github.com/Scoolnik/SK.NRMods/releases/download/CM-v1.0.2/SK.NRMods.CustomMusic.zip)<br>[v2.0.0](https://github.com/Scoolnik/SK.NRMods/releases/download/CM-v2.0.0/SK.NRMods.CustomMusic.zip)|
 | [**Skip intro**](https://github.com/Scoolnik/SK.NRMods/blob/master/SK.NRMods.SkipIntro/README.md) | This mod allows you to skip intro and load directly to garage | [v2.0.0](https://github.com/Scoolnik/SK.NRMods/releases/download/SI-v2.0.0/SK.NRMods.SkipIntro.dll)|
 
 ## Installation
