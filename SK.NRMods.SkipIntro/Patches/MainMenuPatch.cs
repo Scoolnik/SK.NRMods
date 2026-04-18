@@ -14,7 +14,7 @@ namespace SK.NRMods.SkipIntro.Patches
 		public static bool BeforeStart()
 		{
 			var god = GodConstant.Instance;
-			if (god.noPlayerData || !god.player_hasCompletedIntro)
+			if (god.noPlayerData)
 			{
 				_isLoading = false;
 			}
@@ -34,7 +34,7 @@ namespace SK.NRMods.SkipIntro.Patches
 		{
 			_isLoading = false;
 			var god = GodConstant.Instance;
-			if (god.noPlayerData || !god.player_hasCompletedIntro)
+			if (god.noPlayerData)
 			{
 				return;
 			}
