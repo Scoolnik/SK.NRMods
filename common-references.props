@@ -37,6 +37,7 @@
 		<Reference Include="UnityEngine.ImageConversionModule"/>
 		<Reference Include="UnityEngine.IMGUIModule"/>
 		<Reference Include="UnityEngine.InputModule"/>
+		<Reference Include="UnityEngine.InputLegacyModule"/>
 		<Reference Include="UnityEngine.JSONSerializeModule"/>
 		<Reference Include="UnityEngine.LocalizationModule"/>
 		<Reference Include="UnityEngine.Networking"/>

@@ -71,7 +71,7 @@ namespace SK.NRMods.DragStats.Layout
 		{
 			public string GetValue(DragStatsModel model)
 			{
-				return GodConstant.Instance.carModelName(model.RCC.carLocal.carOrigin.modelType, true);
+				return GodConstant.Instance.carModelName(model.RCC.carLocal.carOrigin, true);
 			}
 		}
 
